@@ -14,7 +14,7 @@
             var ctx = c.getContext("2d");
           
           
-            // ctx.fillRect(10, 10, 100, 100);
+           
             
         
         ctx.beginPath();
@@ -510,7 +510,132 @@
           
             // // ici, le reste du script
           </script> 
-          
+
+<canvas id="mon_canvas2" width="650" height="700" style= "border: 2px solid black">
+           
+    </canvas>
+<script type="text/javascript">
+       var c = document.getElementById("mon_canvas2");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+ctx.moveTo(120,100);
+ctx.bezierCurveTo(10, 0, 0, 910, 120, 510);
+ctx.stroke();
+
+ctx.fillStyle = 'blue';
+// start point
+ctx.fillRect(120, 240, 10, 10);
+// end point
+ctx.fillRect(25, 350, 10, 10);
+
+ctx.fillStyle = 'red';
+// control point one
+ctx.fillRect(100, 210, 10, 10);
+// control point two
+ctx.fillRect(120, 100, 10, 10);
+
+ctx.fillStyle = 'blue';
+// start point
+ctx.fillRect(120, 380, 10, 10);
+// end point
+ctx.fillRect(25, 350, 10, 10);
+   </script>       
 <script src="main.js"></script>
+
+<canvas id="mon_canvas3" width="650" height="700" style= "border: 2px solid black">
+           
+    </canvas>
+<script type="text/javascript">
+       var c = document.getElementById("mon_canvas3");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = 'grey';
+// start point
+ctx.fillRect(120, 380, 500, 90);
+ctx.fillStyle = '#4f4f4f';
+ctx.fillRect(420, 330, 120, 50);
+ctx.fillRect(505, 315, 30, 15);
+ctx.fillRect(360, 365, 50, 15);
+ctx.fillRect(362, 360, 25, 5);
+ctx.fillRect(160, 372,12, 8);
+ctx.fillStyle = 'lightblue';
+ctx.fillRect(420, 360, 15, 10);
+ctx.fillRect(440, 360, 15, 10);
+ctx.fillRect(460, 360, 15, 10);
+ctx.fillRect(480, 360, 15, 10);
+ctx.fillRect(500, 360, 15, 10);
+ctx.fillRect(520, 360, 15, 10);
+
+ctx.fillStyle = 'lightgrey';
+ctx.fillRect(420, 345, 120, 5);
+
+ctx.fillStyle = 'black';
+ctx.fillRect(520, 290, 8.3, 14);
+
+ctx.fillStyle = 'yellow';
+ctx.fillRect(528.3, 290, 8.3, 14);
+
+ctx.fillStyle = 'red';
+ctx.fillRect(536.6, 290, 8.3, 14);
+
+ctx.beginPath();
+ctx.strokeStyle = '#4f4f4f';
+ctx.moveTo(360, 370);
+ctx.lineWidth = 7;
+ctx.lineCap = 'round';
+ctx.lineTo(325, 360);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = 'darkgrey';
+ctx.moveTo(520, 290);
+ctx.lineWidth = 2;
+ctx.lineCap = 'round';
+ctx.lineTo(520, 314);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.fillStyle = 'white';
+ctx.arc(120, 450, 60, 0, 2.7 * Math.PI, false);
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.fillStyle = 'white';
+ctx.arc(596, 380.5, 25, 1.2, 2 * Math.PI, true);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'white';
+ctx.arc(620.5, 470, 80, 0, 2.7 * Math.PI, false);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'lightgrey';
+ctx.arc(445, 290, 20, 0.8, 1 * Math.PI, false);
+ctx.fill();
+
+ctx.beginPath();
+ctx.strokeStyle = 'grey';
+ctx.moveTo(440, 310);
+ctx.lineWidth = 3;
+ctx.lineCap = 'round';
+ctx.lineTo(440, 330.5);
+ctx.stroke();
+
+
+
+    </script>       
+<canvas id="mon_canvas4" width="650" height="700" style= "border: 2px solid black">
+           
+    </canvas>
+<script type="text/javascript">
+       var c = document.getElementById("mon_canvas4");
+      var ctx = c.getContext("2d");
+
+ctx.fillStyle = 'orange';
+ctx.fillRect(120, 380, 500, 290);
+
+      
+</script>
     </body>
 </html>
